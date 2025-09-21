@@ -36,12 +36,13 @@ type Projects = {
 
 const projects: Projects = {
   devGram: {
-    title: "DevGram",
+    title: "Expense Tracker Ai",
     description: [
-      "A social networking twitter like web app. Users can **create** posts, **like** posts and **comment** on posts.",
-      "User can visit any **user profile** by clicking at their name or avatar to view posts by them.",
-      "End-to-End typesafe code",
+      "A modern **expense tracking app** built with **Next.js**, **Prisma**, and **PostgreSQL**.",
+      "Users can **record** daily expenses, **categorize** them, and get **AI-powered insights** into their spending habits.",
+      "Includes **secure authentication**, **responsive UI**, and real-time **data management**.",
     ],
+
     images: {
       main: {
         link: "/project/devGram/poster.png",
@@ -50,91 +51,96 @@ const projects: Projects = {
       },
     },
     stack: [
-      logos.trpc,
+      // logos.trpc,
       logos.nextjs,
       logos.react,
-      logos.mongodb,
+      // logos.mongodb,
       // logos.graphql,
-      // logos.typescript,
-      logos.nodejs,
+      logos.typescript,
+      // logos.nodejs,
       logos.reactQuery,
       // logos.materialui,
     ],
     links: {
-      live: "https://devgram-v2.vercel.app",
-      github: "https://github.com/BhavyaCodes/devgram-v2",
+      live: "https://expense-tracker-ai-ten.vercel.app/",
+      github: "https://github.com/BhavyaRohilla/Expense-Tracker-AI",
     },
   },
 
   dogmash: {
-    title: "Dogmash",
+    title: "DevTinder",
     description: [
-      "**Upload**, **view** and **vote** for the cutest dogs, Dogmash project is inspired by Mark Zuckerberg's infamous website **facemash.**",
-      "This was my first big **fullstack** project made using **node.js** with **express.js** and styled using **Bootstrap**. Users can upload their dog pics to the website without any registration which will only be made public once the admin logs in and approve the uploaded image. Yes this project has an **Admin panel** built into it to ensure images are appropriate.",
-      "Uploaded images are stored on **amazon s3 bucket**, uploaded using **presigned URL** straight from browser to s3 bucket.",
-      "This project also has **rate limiting** to avoid spam and uses **CSRF token** protection.",
+      "**Create**, **like**, and **comment** on posts in a social media-like environment, DevTinder is inspired by popular social networking platforms.",
+      "This is a **full-stack** project built using **React.js** for frontend, **Node.js** with **Express.js** for backend, and **MongoDB** as the database. Users can securely register, login, and interact with posts.",
+      "The project includes an **Admin panel** to manage posts and moderate content, ensuring a safe platform for users.",
+      "All interactions are stored in **MongoDB**, and authentication is handled using **JWT tokens**.",
+      "The UI is fully **responsive**, styled using **Tailwind CSS**, and optimized for both desktop and mobile users.",
     ],
+
     images: {
       main: {
         link: "/project/dogmash/dogmash.png",
-        width: 1903,
-        height: 894,
+        width: 1182,
+        height: 732,
       },
     },
     stack: [
       logos.nodejs,
       logos.expressjs,
-      logos.s3,
+      // logos.s3,
       logos.mongodb,
-      logos.bootstrap,
+      logos.react,
       logos.ejs,
     ],
     links: {
-      live: "https://dogmash.herokuapp.com/",
+      github: "https://github.com/BhavyaRohilla/DevConnect",
+      live: "",
     },
   },
   covid19: {
-    title: "Covid-19 India tracker",
+    title: "The Wild Oasis",
     description: [
-      "Covid-19 tracker for India made using **React.**",
-      "This web app can be used to track current and historical data of India and its states and union territories. The web app shows a vector **map of India**, user may hover over any state and will be able to see the total confirmed, recovered, active and deceased for that state.",
-      "There is also a state-wise table of covid data which can be sorted by any column.",
-      "The app also features historical data using **charts** made using **[chartjs](https://www.chartjs.com)**, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
-      "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
+      "**Full-stack cabin booking platform** built using **Next.js**, **Supabase**, and **Tailwind CSS**.",
+      "Users can browse detailed **cabin listings** with images, descriptions, and availability, and make seamless **bookings** with real-time updates.",
+      "The app features **user authentication** with **Google OAuth** via **NextAuth.js**, ensuring secure login and personalized user experiences.",
+      "An **admin panel** allows admins to manage bookings and moderate content efficiently.",
+      "The application includes **responsive UI** optimized for both desktop and mobile devices, and a **date picker** for selecting booking dates using **react-day-picker**.",
     ],
+
     images: {
-      webm: "/project/covid-19/c4.webm",
-      mp4: "/project/covid-19/c4.mp4",
-      poster: "/project/covid-19/poster.png",
-      vidHeight: 676,
-      vidWidth: 963,
+      main: {
+        link: "/project/covid-19/poster.png",
+        width: 1182,
+        height: 732,
+      },
     },
-    stack: [logos.chartjs, logos.react, logos.materialui],
+    stack: [logos.nextjs, logos.react, logos.typescript, logos.vercel],
     links: {
-      github: "https://github.com/BhavyaCodes/covid-tracker-material-ui-react",
-      live: "https://covid-tracker-beta.vercel.app/",
+      github: "https://github.com/BhavyaRohilla/The-Wild-Oasis-Client",
+      live: "https://the-wild-oasis-client-orpin.vercel.app/",
     },
   },
   connect4: {
-    title: "Connect-4 Online Multiplayer",
+    title: "Fast React Pizza Company",
     description: [
-      "Connect-4 board game that allows you to **play with anyone around the world** with no registration or downloads. You and your friend just need to open the link in the browser and you're ready to play 🙂",
-      "The frontend is built using **React** and styled using **material-ui** and backend built using **node.js**.",
-      "**socket.io** library is used for live transfer of data from client to server using websockets.",
-      "The app supports multiple games running parallel, means multiple pair of people can play on the same website at the same time without any interference.",
-      "If you wish to test this project, you must run the url on different browsers, or better check my **[video explaining how it works](https://www.linkedin.com/posts/bhavya-tomar_careerhack-github-hackathon-activity-6760854974944694272-aEDM)** that I posted on LinkedIn.",
+      "**Full-stack pizza ordering app** built with **React**, **React Router**, and **useReducer** for state management.",
+      "Users can **browse pizzas**, **customize toppings**, **add to cart**, and **place orders** seamlessly with a responsive UI.",
+      "The application includes **cart management** using **useReducer**, ensuring predictable and maintainable state updates.",
+      "Orders and menu data are handled through **local JSON or API**, simulating a real-world pizza ordering workflow.",
+      "The UI is **fully responsive**, styled with **CSS modules** and modern design principles for desktop and mobile devices.",
     ],
-    stack: [logos.nodejs, logos.react, logos.socketio, logos.materialui],
+
+    stack: [logos.react, logos.javascript, logos.redux],
     links: {
-      github: "https://github.com/BhavyaCodes/connect-4-online-multiplayer",
-      live: "https://konnect-4.vercel.app/",
+      github: "https://github.com/BhavyaRohilla/fast-react-pizza-co",
+      live: "https://fast-react-pizza-company-aa.netlify.app/",
     },
     images: {
-      poster: "/project/connect-4/poster.jpeg",
-      mp4: "/project/connect-4/c4mp4.mp4",
-      webm: "/project/connect-4/c4webm.webm",
-      vidHeight: 958,
-      vidWidth: 1916,
+      main: {
+        link: "/project/connect-4/poster.png",
+        width: 1182,
+        height: 732,
+      },
     },
   },
   getItDone: {
