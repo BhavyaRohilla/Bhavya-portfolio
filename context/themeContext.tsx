@@ -5,6 +5,8 @@ import {
   SetStateAction,
   useCallback,
   useContext,
+  useEffect,
+  useState,
 } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 
@@ -15,6 +17,17 @@ const ToggleDarkModeContext = createContext<Dispatch<
 
 export const DarkModeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useLocalStorage("darkMode", true);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true); // wait until client-side
+  }, []);
+
+  if (!mounted) {
+    // prevent mismatched theme on first SSR render
+    return null;
+  }
+
   return (
     <DarkModeContext.Provider value={theme}>
       <ToggleDarkModeContext.Provider value={setTheme}>
