@@ -14,7 +14,6 @@ const DarkModeIcon = () => {
   return (
     <Tooltip title="Toggle Dark Mode" aria-label="toggle dark mode">
       <div>
-        {/* @ts-expect-error: react-toggle-dark-mode typing issue */}
         <DarkModeSwitch
           style={{ marginRight: theme.spacing(2) }}
           checked={!darkMode}
