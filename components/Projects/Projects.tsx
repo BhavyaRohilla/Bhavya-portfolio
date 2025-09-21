@@ -1,7 +1,8 @@
 import { memo } from "react";
 import Project from "./Project";
 
-import { ProjectType } from "lib/projects";
+// import { ProjectType } from "lib/projects";
+import { ProjectType } from "../../lib/projects";
 
 function Projects({ projects }: { projects: ProjectType[] }) {
   const renderProjects = () => {

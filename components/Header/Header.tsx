@@ -13,10 +13,12 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import lightHeader from "public/assets/backgrounds/blob-scene-light.svg";
 import darkHeader from "public/assets/backgrounds/blob-scene-dark.svg";
 import HeaderText from "./HeaderText";
-import { useToggleDarkMode } from "../../context/themeContext";
+import { useDarkMode, useToggleDarkMode } from "../../context/themeContext";
 
 function Header() {
-  const darkMode = useToggleDarkMode();
+  // const darkMode = useToggleDarkMode();
+  const darkMode = useDarkMode(); // ✅ use value, not toggle
+  const toggleDarkMode = useToggleDarkMode(); // optional, if you want to toggle
 
   const useStyles = makeStyles((theme: Theme) =>
     createStyles({

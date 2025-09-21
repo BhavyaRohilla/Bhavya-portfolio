@@ -12,15 +12,18 @@ import {
   useMediaQuery,
 } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import TechChips from "components/Projects/TechChips";
+// import TechChips from "components/Projects/TechChips";
+import TechChips from "./TechChips";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import { lime } from "@material-ui/core/colors";
 import StarsIcon from "@material-ui/icons/Stars";
 
-import { useDarkMode } from "context/themeContext";
+// import { useDarkMode } from "context/themeContext";
+import { useDarkMode } from "../../context/themeContext";
 
-import { ProjectType } from "lib/projects";
+// import { ProjectType } from "lib/projects";
+import { ProjectType } from "../../lib/projects";
 import Wave from "./Wave";
 interface AppProps extends ProjectType {
   index: number;

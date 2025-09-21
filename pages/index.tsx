@@ -2,15 +2,16 @@ import { memo } from "react";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import { AnimatePresence } from "framer-motion";
-import Header from "components/Header";
-import Skills from "components/Skills";
-import Projects from "components/Projects";
-import ProjectsTitle from "components/Projects/ProjectsTitle";
-import Footer from "components/Footer";
-import AllProjectsButton from "components/Projects/AllProjectsButton";
+// import Header from "components/Header";
+import Header from "../components/Header";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import ProjectsTitle from "../components/Projects/ProjectsTitle";
+import Footer from "../components/Footer";
+import AllProjectsButton from "../components/Projects/AllProjectsButton";
 
-import allProjects, { ProjectType } from "lib/projects";
-
+// import allProjects, { ProjectType } from "lib/projects";
+import allProjects, { ProjectType } from "../lib/projects";
 const projects: ProjectType[] = [
   allProjects.devGram,
   allProjects.dogmash,
@@ -25,7 +26,7 @@ const IndexPage = () => {
       <Head>
         <title>Bhavya Rohilla</title>
       </Head>
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence initial={false}>
         <motion.div
           key="index"
           initial={{ opacity: 0, x: -1000 }}

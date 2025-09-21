@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
 import { Toolbar } from "@material-ui/core";
-import Projects from "components/Projects";
-import ProjectsTitle from "components/Projects/ProjectsTitle";
-import BackHomeButton from "components/Projects/BackHomeButton";
+import Projects from "../components/Projects";
+import ProjectsTitle from "../components/Projects/ProjectsTitle";
+import BackHomeButton from "../components/Projects/BackHomeButton";
 
-import allProjects, { ProjectType } from "lib/projects";
+import allProjects, { ProjectType } from "../lib/projects";
 
 const projects: ProjectType[] = [
   allProjects.devGram,
