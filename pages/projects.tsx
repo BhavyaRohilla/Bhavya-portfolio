@@ -12,12 +12,12 @@ const projects: ProjectType[] = [
   allProjects.dogmash,
   allProjects.covid19,
   allProjects.connect4,
-  allProjects.urlShortener,
+  // allProjects.urlShortener,
   allProjects.getItDone,
-  allProjects.thisWebsite,
-  allProjects.theMealHub,
-  allProjects.pokemon,
-  allProjects.jokes,
+  // allProjects.thisWebsite,
+  // allProjects.theMealHub,
+  // allProjects.pokemon,
+  // allProjects.jokes,
 ];
 
 function projectsPage() {
@@ -53,7 +53,7 @@ function projectsPage() {
       >
         <Toolbar />
         <ProjectsTitle text="Projects I Have Worked On" />
-        <Projects projects={projects} />
+        <Projects />
         <BackHomeButton />
       </motion.div>
     </>
