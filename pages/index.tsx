@@ -41,7 +41,7 @@ const IndexPage = () => {
             <Header />
             <Skills />
             <ProjectsTitle text={"Featured Projects"} />
-            <Projects projects={projects} />
+            <Projects />
             <AllProjectsButton />
             <Footer />
           </>
