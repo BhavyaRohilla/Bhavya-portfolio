@@ -1,26 +1,22 @@
 import { memo } from "react";
 import Project from "./Project";
+import projects from "../../lib/projects"; // ✅ import karo
 
-// import { ProjectType } from "lib/projects";
-import { ProjectType } from "../../lib/projects";
-
-function Projects({ projects }: { projects: ProjectType[] }) {
+function Projects() {
   const renderProjects = () => {
-    return projects.map(
-      ({ title, description, images, stack, links, special }, index) => {
-        return (
-          <Project
-            key={index}
-            index={index + 1}
-            title={title}
-            description={description}
-            images={images}
-            stack={stack}
-            links={links}
-            special={special}
-          />
-        );
-      }
+    return Object.values(projects).map(
+      ({ title, description, images, stack, links, special }, index) => (
+        <Project
+          key={index}
+          index={index}
+          title={title}
+          description={description}
+          images={images}
+          stack={stack}
+          links={links}
+          special={special}
+        />
+      )
     );
   };
 
